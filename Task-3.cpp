@@ -1,7 +1,5 @@
 /*Build a simple console-based Tic-Tac-Toe game that allows two players to 
 play against each other*/
-/*Build a simple console-based Tic-Tac-Toe game that allows two players to
-play against each other*/
 #include <iostream>
 #include <time.h>
 using namespace std;
@@ -14,7 +12,6 @@ int count_board(char symbol);
 char check_winner();
 void computer_vs_player();
 void player_vs_player();
-
 int main()
 {
     int mode;
@@ -37,7 +34,6 @@ int main()
     }
     return 0;
 }
-
 void computer_vs_player()
 {
     string player_name;
@@ -78,7 +74,6 @@ void computer_vs_player()
         }
     }
 }
-
 void get_computer_choice()
 {
     int choice;
@@ -89,7 +84,6 @@ void get_computer_choice()
     } while (board[choice] != ' ');
     board[choice] = 'O';
 }
-
 void get_x_player_choice()
 {
     while (true)
@@ -112,7 +106,6 @@ void get_x_player_choice()
         }
     }
 }
-
 void get_o_player_choice()
 {
     while (true)
@@ -135,7 +128,6 @@ void get_o_player_choice()
         }
     }
 }
-
 void player_vs_player()
 {
     string x_player_name, o_player_name;
@@ -179,7 +171,6 @@ void player_vs_player()
         }
     }
 }
-
 int count_board(char symbol)
 {
     int total = 0;
@@ -192,7 +183,6 @@ int count_board(char symbol)
     }
     return total;
 }
-
 char check_winner()
 {
     // checking winner in horizontal
@@ -219,7 +209,6 @@ char check_winner()
     else
         return 'D';
 }
-
 void show_board()
 {
     cout << "    "
