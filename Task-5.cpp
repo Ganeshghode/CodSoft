@@ -46,7 +46,7 @@ void search()
         cout<<"No data entered"<<endl;
     }
     else
-    {
+    {    
         cout<<"Enter number of book which you want to search :"<<endl;
         cin>>choice2;
         for (i=0;i<choice2;i++)
@@ -56,7 +56,6 @@ void search()
             cout<<"Author  : "<<arr2[i]<<endl;
             cout<<"ISBN    : "<<arr3[i]<<endl;
             cout<<"Student : "<<arr4[i]<<endl<<endl;
-            
         }
     }
 }
@@ -152,7 +151,6 @@ void fine_calculation()
     else
     {
         cout<<"Enter the last number of book for see the data of fine"<<endl;
-       
         cin>>choice2;
         for (i=0; i<choice2; i++)
         {
@@ -218,38 +216,38 @@ int main()
         cout<<"Press 2 for search the data of book :"<<endl;
         cout<<"Press 3 for issue the book to student :"<<endl;
         cout<<"Press 4 for view the borrowers of book :"<<endl;
-    cout<<"Press 5 for update and return the data of book :"<<endl;
-    cout<<"Press 6 for check the fine calculation :"<<endl;
-    cout<<"Press 7 for delete the record the book :"<<endl;
-    cout<<"Press 8 for exit :"<<endl<<endl;
-    cin>>choice1;
-    switch (choice1)
-    {
-        case 1:
-            store();
-        break;
-        case 2:
-            search();
-        break;
-        case 3:
-            issue();
-        break;
-        case 4:
-            borrower();
-        break;
-        case 5:
-            update_n_return();
-        break;
-        case 6:
-            fine_calculation();
-        break;
-        case 7:
-            delete_record();
-        break;
-        case 8:
-            exit(0);
-        break;
-    }
+        cout<<"Press 5 for update and return the data of book :"<<endl;
+        cout<<"Press 6 for check the fine calculation :"<<endl;
+        cout<<"Press 7 for delete the record the book :"<<endl;
+        cout<<"Press 8 for exit :"<<endl<<endl;
+        cin>>choice1;
+        switch (choice1)
+        {
+            case 1:
+                store();
+            break;
+            case 2:
+                search();
+            break;
+            case 3:
+                issue();
+            break;
+            case 4:
+                borrower();
+            break;
+            case 5:
+                update_n_return();
+            break;
+            case 6:
+                fine_calculation();
+            break;
+            case 7:
+                delete_record();
+            break;
+            case 8:
+                exit(0);
+            break;
+        }
     }
     cout<<endl;
     return 0;
